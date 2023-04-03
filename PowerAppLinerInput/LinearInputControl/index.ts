@@ -91,7 +91,7 @@ implements ComponentFramework.StandardControl<IInputs, IOutputs>
                     this._value = jsonValue.data;
                     this.inputElement.setAttribute("value", jsonValue.data);
                     this.labelElement.innerHTML = jsonValue.data;
-                    this.updateView;
+                    this._notifyOutputChanged();
                 }
             };
         }
